@@ -1,0 +1,179 @@
+{
+	"compiler": {
+		"version": "0.4.26+commit.4563c3fc"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "isInstantiation",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_owners",
+						"type": "address[]"
+					},
+					{
+						"name": "_required",
+						"type": "uint256"
+					},
+					{
+						"name": "_dailyLimit",
+						"type": "uint256"
+					}
+				],
+				"name": "create",
+				"outputs": [
+					{
+						"name": "wallet",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "",
+						"type": "address"
+					},
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "instantiations",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "creator",
+						"type": "address"
+					}
+				],
+				"name": "getInstantiationCount",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"name": "sender",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"name": "instantiation",
+						"type": "address"
+					}
+				],
+				"name": "ContractInstantiation",
+				"type": "event"
+			}
+		],
+		"devdoc": {
+			"author": "Stefan George - <stefan.george@consensys.net>",
+			"methods": {
+				"create(address[],uint256,uint256)": {
+					"details": "Allows verified creation of multisignature wallet.",
+					"params": {
+						"_dailyLimit": "Amount in wei, which can be withdrawn without confirmations on a daily basis.",
+						"_owners": "List of initial owners.",
+						"_required": "Number of required confirmations."
+					},
+					"return": "Returns wallet address."
+				},
+				"getInstantiationCount(address)": {
+					"details": "Returns number of instantiations by creator.",
+					"params": {
+						"creator": "Contract creator."
+					},
+					"return": "Returns number of instantiations by creator."
+				}
+			},
+			"title": "Multisignature wallet factory for daily limit version - Allows creation of multisig wallet."
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"MultiSigWalletWithDailyLimitFactory.sol": "MultiSigWalletWithDailyLimitFactory"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Factory.sol": {
+			"keccak256": "0x7804d53db4c8a8fcfadf18a82c3dc92f11507f4fbab7062d850d8bd28cbb88ef",
+			"urls": [
+				"bzzr://b97062bd28ae1122f35d8a439b90ffe6ba4675e60fb9d7f3456f1ac7c94543e0"
+			]
+		},
+		"MultiSigWallet.sol": {
+			"keccak256": "0x3017ea5629fd27acd03684f6d7fef6538ca20ea7093fbcda7eab485dc75db2ab",
+			"urls": [
+				"bzzr://8ee34d39ea057c114230adff27cb134d8f0dc422790b8f7483a3504da6f6835c"
+			]
+		},
+		"MultiSigWalletWithDailyLimit.sol": {
+			"keccak256": "0x24868c44ef4aad9f1be3af3de528faf40223a957a4e654000e74e3791db384cf",
+			"urls": [
+				"bzzr://995f5a146e4d457229cb60cfc81debf66e7240a6250e1d3f94c12674d47fccc6"
+			]
+		},
+		"MultiSigWalletWithDailyLimitFactory.sol": {
+			"keccak256": "0xb2955039ec555398e021c44b1309ee7f60e4e4dbb1b49a4db6ff8d7a3454a410",
+			"urls": [
+				"bzzr://6f64042fbc642d9e47a3832e0b0d67efaf0444caa1c20e200ba83215cd516c03"
+			]
+		}
+	},
+	"version": 1
+}
