@@ -56795,6 +56795,24 @@
 											{
 												"externalReferences": [
 													{
+														"result": {
+															"declaration": 648,
+															"isOffset": false,
+															"isSlot": false,
+															"src": "7852:6:0",
+															"valueSize": 1
+														}
+													},
+													{
+														"data": {
+															"declaration": 642,
+															"isOffset": false,
+															"isSlot": false,
+															"src": "7765:4:0",
+															"valueSize": 1
+														}
+													},
+													{
 														"destination": {
 															"declaration": 636,
 															"isOffset": false,
@@ -56818,24 +56836,6 @@
 															"isOffset": false,
 															"isSlot": false,
 															"src": "8309:10:0",
-															"valueSize": 1
-														}
-													},
-													{
-														"data": {
-															"declaration": 642,
-															"isOffset": false,
-															"isSlot": false,
-															"src": "7765:4:0",
-															"valueSize": 1
-														}
-													},
-													{
-														"result": {
-															"declaration": 648,
-															"isOffset": false,
-															"isSlot": false,
-															"src": "7852:6:0",
 															"valueSize": 1
 														}
 													}

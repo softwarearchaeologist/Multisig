@@ -12,7 +12,7 @@ var txDefaultOrig =
   },
   gasLimit: 3141592,
   gasPrice: 18000000000,
-  ethereumNode: "https://cronos-rpc.defier.app",
+  ethereumNode: "https://rpc.vvs.finance",
   connectionChecker: {
     method : "OPTIONS",
     url : "https://www.google.com",
@@ -40,7 +40,7 @@ if (isElectron) {
 var txDefault = {
   ethereumNodes : [
     {
-      url : "https://cronos-rpc.defier.app",
+      url : "https://rpc.vvs.finance",
       name: "CRO Mainnet Beta"
     },
   ],
